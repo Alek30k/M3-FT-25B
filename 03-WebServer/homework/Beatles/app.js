@@ -66,7 +66,7 @@ http.createServer(function(req, res){
               res.writeHead(404, {'Content-type' : 'text/plain'})
               return res.end('Lo siento bro')
             } 
-            //reemplazo
+            //reemplazoo
             data = data.replace('{name}', found.name)
             data = data.replace('{birthdate}', found.birthdate)
             data = data.replace('{profilePic}', found.profilePic)
