@@ -22,7 +22,7 @@ $Promise.prototype._internalResolve = function(data){
 $Promise.prototype._internalReject = function(reason){
     if(this._state === 'pending'){  
         this._state = 'rejected' 
-        this._value = reason
+        this._givalue = reason
         this._callHandlers()
     }
 }
